@@ -68,6 +68,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     implementation 'org.apache.httpcomponents:httpclient:4.5.13'
 
+    implementation 'org.json:json:20171018'
+
     //Caching
     //implementation 'org.springframework.boot:spring-boot-starter-cache:2.4.0'
 

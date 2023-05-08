@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class RentalResponseDto {
 
     private String eMail;
-    private Long carId;
+    private String carId;
     private LocalDate startDay;
     private LocalDate endDay;
     private float totalCost;

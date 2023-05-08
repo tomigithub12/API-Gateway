@@ -22,11 +22,4 @@ public class UserMapper {
         customer.setPassword(requestDto.getPassword());
         return customer;
     }
-
-    public RegistrationResponseDto responseMapping(Customer customer) {
-        return RegistrationResponseDto.builder()
-                .id(customer.getId())
-                .eMail(customer.getEMail())
-                .build();
-    }
 }

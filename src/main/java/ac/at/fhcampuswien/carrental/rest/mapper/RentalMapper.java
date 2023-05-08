@@ -21,16 +21,6 @@ public class RentalMapper {
                 .build();
     }
 
-    public RentalResponseDto RentalToBookingResponse(Rental rental, String eMail){
-        return RentalResponseDto.builder()
-                .eMail(eMail)
-                .carId(rental.getCarId())
-                .startDay(rental.getStartDay())
-                .endDay(rental.getEndDay())
-                .totalCost(rental.getTotalCost())
-                .build();
-    }
-
     public RentalUpdateResponseDto RentalToUpdateResponse(Rental rentalUpdate) {
         return RentalUpdateResponseDto.builder()
                 .id(rentalUpdate.getId())

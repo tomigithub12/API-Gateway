@@ -4,9 +4,9 @@ import org.springframework.http.HttpStatus;
 import java.time.ZonedDateTime;
 
 public class ApiException {
-    public final String message;
-    public final HttpStatus httpStatus;
-    public final ZonedDateTime timestamp;
+    public String message = "";
+    public HttpStatus httpStatus = HttpStatus.NOT_FOUND;
+    public ZonedDateTime timestamp = ZonedDateTime.now();
 
     public ApiException(String message,
                         HttpStatus httpStatus,
@@ -15,6 +15,8 @@ public class ApiException {
         this.httpStatus = httpStatus;
         this.timestamp = timestamp;
     }
+
+    public ApiException() {}
 
     public String getMessage() {
         return message;

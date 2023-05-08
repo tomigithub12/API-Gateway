@@ -10,11 +10,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class AuthenticationConfig implements WebMvcConfigurer {
 
-    @Autowired
-    JwtService jwtService;
-
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new AuthenticationInterceptor(jwtService));
+        registry.addInterceptor(new AuthenticationInterceptor());
     }
 }

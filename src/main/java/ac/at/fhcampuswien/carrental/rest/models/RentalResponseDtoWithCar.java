@@ -12,8 +12,8 @@ import java.time.LocalDate;
 @Setter
 @Builder
 public class RentalResponseDtoWithCar {
-    private Long id;
-    private Long customerId;
+    private String id;
+    private String customerId;
     private Car car;
     private LocalDate startDay;
     private LocalDate endDay;
